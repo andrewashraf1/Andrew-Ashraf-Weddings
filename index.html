@@ -67,8 +67,9 @@
     nav a {
       color: #f1f1f1;
       text-decoration: none;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       font-weight: bold;
+      font-size: 0.9rem;
     }
 
     .section {
@@ -107,6 +108,23 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.5rem;
+    }
+
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 2px solid #444;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #1a1a1a;
+    }
+
+    .video-container video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
 
     .video-title {
@@ -217,24 +235,23 @@
     <h2 data-aos="fade-up">Wedding Films</h2>
     <div class="video-gallery" data-aos="fade-up" data-aos-delay="200">
       <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; text-align: center;">
-        <div>
+        <div class="video-container">
           <h3 class="video-title">Makarios & Sozanna</h3>
-          <video width="480" height="270" controls>
+          <video controls>
             <source src="video1.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
-    
-        <div>
+
+        <div class="video-container">
           <h3 class="video-title">Abanoub & Youstina</h3>
-          <video width="480" height="270" controls>
+          <video controls>
             <source src="video2.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
-      </div>   
+      </div>
     </div>
-    
   </section>
 
   <section class="section" id="contact">
