@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew Ashraf Weddings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.6.0/css/lightgallery-bundle.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #2a2a2a;
+      color: #f1f1f1;
+    }
+
+    header {
+      height: 100vh;
+      background: url('image1.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+      height: 300px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .video-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .video-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #f1f1f1;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .contact button {
+      padding: 1rem 2rem;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div><strong>Andrew Ashraf Weddings</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1 data-aos="fade-up">Capturing Moments, Creating Memories</h1>
+  </header>
+
+  <section class="section" id="about">
+    <h2 data-aos="fade-up">About Andrew</h2>
+    <div class="about" data-aos="fade-up" data-aos-delay="200">
+      <img src="andrew.jpg" alt="Andrew Ashraf" style="width: 200px; border-radius: 50%; margin-bottom: 20px;">
+      <p>Andrew Ashraf is a passionate wedding photographer dedicated to turning real love stories into timeless visual masterpieces. With an eye for detail and emotion, every frame is designed to preserve the authenticity and beauty of your special day.</p>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2 data-aos="fade-up">Portfolio</h2>
+    <div id="lightgallery" class="gallery" data-aos="fade-up" data-aos-delay="200">
+      <a href="image2.jpg"><img src="image2.jpg" /></a>
+      <a href="image3.jpg"><img src="image3.jpg" /></a>
+      <a href="image4.jpg"><img src="image4.jpg" /></a>
+      <a href="image5.jpg"><img src="image5.jpg" /></a>
+      <a href="image6.jpg"><img src="image6.jpg" /></a>
+      <a href="image7.jpg"><img src="image7.jpg" /></a>
+    </div>
+  </section>
+
+  <section class="section" id="videos">
+    <h2 data-aos="fade-up">Wedding Films</h2>
+    <div class="video-gallery" data-aos="fade-up" data-aos-delay="200">
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; text-align: center;">
+        <div>
+          <h3 class="video-title">Makarios & Sozanna</h3>
+          <video width="480" height="270" controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+    
+        <div>
+          <h3 class="video-title">Abanoub & Youstina</h3>
+          <video width="480" height="270" controls>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>   
+    </div>
+    
+  </section>
+
+  <section class="section" id="contact">
+    <h2 data-aos="fade-up">Let's Create Together</h2>
+    <div class="contact" data-aos="fade-up" data-aos-delay="200">
+      <p>Ready to make magic? Reach out to book your date.</p>
+      <form action="mailto:andrewashrafphotography1m@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" placeholder="Your Name" name="name" required>
+        <input type="email" placeholder="Your Email" name="email" required>
+        <textarea placeholder="Your Message" rows="5" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div style="margin-top: 20px;">
+        <a href="https://wa.me/message/ZFRNFHDVJGCIK1" target="_blank" style="background-color: #25D366; padding: 10px 20px; color: white; border-radius: 25px; text-decoration: none; font-weight: bold;">Contact via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Andrew Ashraf Weddings. All rights reserved.</p>
+    <div>
+      <a href="https://www.facebook.com/andrewashrafphotography1m" target="_blank">Facebook</a> | 
+      <a href="https://www.instagram.com/andrew_ashraf_ph?igsh=MTV3NTdpcTMzem54dg==" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.6.0/lightgallery.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lg-zoom@2.1.0/lg-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lg-pager@2.1.0/lg-pager.min.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    lightGallery(document.getElementById("lightgallery"), {
+      selector: "a",
+      zoom: true,
+      pager: true,
+      download: false,
+      fullscreen: true,
+      animateThumb: false,
+      showThumbByDefault: false
+    });
+  </script>
+</body>
+
+</html>
